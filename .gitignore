@@ -216,3 +216,5 @@ typings/
 .env
 
 
+/.idea/
+/webpack-stats.json
