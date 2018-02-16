@@ -218,3 +218,4 @@ typings/
 
 /.idea/
 /webpack-stats.json
+/assets/bundles/
