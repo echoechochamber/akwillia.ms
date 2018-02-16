@@ -1,0 +1,18 @@
+{
+  "name": "akw_site",
+  "version": "1.0.0",
+  "description": "personal website js for use with django",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AK Williams",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-loader": "^7.1.2",
+    "react": "^16.2.0",
+    "webpack": "^3.11.0",
+    "webpack-bundle-tracker": "^0.2.1"
+  }
+}
