@@ -219,3 +219,5 @@ typings/
 /.idea/
 /webpack-stats.json
 /assets/bundles/
+/static/
+/Library/
