@@ -6,7 +6,9 @@ import { AppContainer } from 'react-hot-loader';
 const render = Component => {
     ReactDOM.render(
         <AppContainer>
+            <section className='section'>
             <Component/>
+            </section>
         </AppContainer>,
         document.getElementById("app-root"));
 }
