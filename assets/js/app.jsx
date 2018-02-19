@@ -1,18 +1,42 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import './app.scss';
+import {tryMe} from "./reducers/test";
+
 
 class App extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         return (
-            <div className='container'>
-                <h1 className='title has-text-primary'>yo yo yo it's react here. for real dawg </h1>
-                <h2>--- for Real??</h2>
-                <h1> for really real dawg. </h1>
-                <h1> for reals. </h1>
-            </div>
-
+            <section className='hero is-dark'>
+                <div className="hero-body">
+                    <div className="container">
+                        <h1 className='title is-centered has-text-primary'>Test Text</h1>
+                        <h2 className='subtitle'>(just too see if it workskskss)</h2>
+                        <a className='button is-primary' onClick={()=>{this.props.try()}}>Click me to test</a>
+                        <br/>
+                        <p>{this.props.wat}</p>
+                        <p>{this.props.test}</p>
+                    </div>
+                </div>
+            </section>
         )
     }
 };
 
-export default App;
+const mapStateToProps = (state) => {
+    return {
+        test: state.testReducer.data
+    }
+}
+
+const mapDispatchToProps = (dispatch) =>{
+    return {
+        try: ()=>{dispatch(tryMe())}
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

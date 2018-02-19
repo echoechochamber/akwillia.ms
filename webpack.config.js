@@ -30,13 +30,7 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
         new BundleTracker({filename: './webpack-stats.json'}),
-/*        new SplitByPathPlugin([
-            {
-                name: 'vendor',
-                path: path.join(__dirname, './node_modules/')
-            }
-        ]),*/
-        new UglifyJs(),
+        // new UglifyJs(),
     ],
 
     module: {

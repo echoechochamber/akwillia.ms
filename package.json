@@ -31,5 +31,10 @@
     "webpack-dev-server": "^2.11.1",
     "webpack-split-by-path": "^2.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "axios": "^0.17.1",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  }
 }
