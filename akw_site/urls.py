@@ -20,7 +20,8 @@ from django.views.generic import TemplateView
 
 
 urlpatterns = [
-    url(r'^$', TemplateView.as_view(template_name='main.html'), name='main'),
+    url(r'^$', TemplateView.as_view(template_name='staticpage.html'), name='home'),
+    # url(r'^$', TemplateView.as_view(template_name='main.html'), name='main'),
     url(r'^admin/', admin.site.urls),
     url(r'^', include('api.urls')),
 ]

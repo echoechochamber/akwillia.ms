@@ -15,7 +15,7 @@ class App extends React.Component {
                 <div className="hero-body">
                     <div className="container">
                         <h1 className='title is-centered has-text-primary'>Test Text</h1>
-                        <h2 className='subtitle'>(just too see if it workskskss)</h2>
+                        <h2 className='subtitle'>(just too see if requests from the api work)</h2>
                         <a className='button is-primary' onClick={()=>{this.props.try()}}>Click me to test</a>
                         <br/>
                         <p>{this.props.wat}</p>
