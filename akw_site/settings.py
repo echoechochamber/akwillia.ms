@@ -25,7 +25,7 @@ SECRET_KEY = '82_*v_@v7qeigb9r$lzn+@qikuioov^((9loaz3b&(e7)3uupm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*", "0.0.0.0"]
 
 
 # Application definition
@@ -120,9 +120,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+# where static files are gathered when you run static root
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'assets'),
+    os.path.join(BASE_DIR, 'static'),
 )
 
 WEBPACK_LOADER = {
