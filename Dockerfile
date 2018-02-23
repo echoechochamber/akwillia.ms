@@ -39,7 +39,7 @@ RUN ln -s /etc/nginx/sites-available/akw.com /etc/nginx/sites-enabled/akw.com
 
 
 # Make port 80 available to the world outside this container
-EXPOSE 8081
+EXPOSE 80
 
 #CMD ["python", "/code/manage.py", "runserver", "0.0.0.0:8080"]
 CMD ["/bin/bash", "-c","supervisord -n -c /etc/supervisor/supervisord.conf"]
