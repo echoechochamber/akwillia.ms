@@ -25,7 +25,7 @@ RUN rm /etc/supervisor/supervisord.conf
 COPY ./config/supervisord.conf /etc/supervisor/supervisord.conf
 
 
-ADD . /code
+COPY . /code
 # give the right user groups ownership to the backend
 RUN chown -R www-data:www-data /code
 RUN chmod 755 /code
