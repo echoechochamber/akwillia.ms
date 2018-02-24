@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A.K. Williams</title>
+    <link rel="stylesheet" href="{% static 'css/bulma/css/bulma.css' %}">
+    <link rel="stylesheet" href="{% static 'css/simple-line-icons/css/simple-line-icons.css' %}">
+    <style>
+        {% comment %} increase the icon size {% endcomment %}
+        i {
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+<section class="section hero is-fullheight is-bold is-primary">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+{#                <div class="box" style="background-color: #363636;">#}
+                    <h1 class="title has-text-centered">A.K. Williams</h1>
+                    <figure class="image is-flex" style="justify-content: center;">
+                        <img style="max-height: 500px;width:auto" src="{% static 'favicon.ico' %}" alt="">
+                    </figure>
+{#                </div>#}
+            </div>
+
+            <div class="column">
+                <div class="content has-text-centered">
+                    <h2 class="subtitle has-text-dark">Creative Technologist. Artist. Developer.</h2>
+                    <p>Building the future in Brooklyn, NY</p>
+
+                    <div class="column is-half is-offset-one-quarter">
+                        <div class="level">
+                            <a href="https://www.linkedin.com/in/allen-williams-6b7308a2/" class="level-item image">
+                                <i class="icon-social-linkedin"></i>
+                            </a>
+                            <a href="https://www.instagram.com/a2damfk/" class="level-item image">
+                                <i class="icon-social-instagram"></i>
+                            </a>
+                            <a href="https://github.com/echoechochamber" class="level-item image">
+                            <i class="icon-social-github"></i>
+                            </a>
+                            <a href="mailto:akwillia2@gmail.com" class="level-item image"><i class="icon-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{# line icons are from the library downloaded here : https://github.com/thesabbir/simple-line-icons#}
+</body>
+</html>
